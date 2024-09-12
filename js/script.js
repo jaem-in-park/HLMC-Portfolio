@@ -1,12 +1,12 @@
 $(function () {
   // 슬라이드
   function slide() {
-    $(".slide ul").animate({ left: "-100%" }, 1000, function () {
+    $(".slide ul").animate({ left: "-100%" }, 3000, function () {
       $(".slide ul").append($(".slide ul li").first());
       $(".slide ul").css({ left: "0" });
     });
   }
-  setInterval(slide, 2000);
+  setInterval(slide, 3500);
 
   // 카테고리 메뉴
   $(".header-list > a , .Ab>li>a").mouseenter(function () {
