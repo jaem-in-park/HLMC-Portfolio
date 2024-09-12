@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+button {
+  cursor: pointer;
+}
+body {
+  background: #fff;
+  color: #333;
+}
+.wrap {
+  width: 100%;
+  height: 1000px;
+}
+header {
+  width: 1340px;
+  margin: auto;
+  height: 200px;
+  position: relative;
+}
+header .spot {
+  display: flex;
+  gap: 7px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+header .spot li {
+  padding-right: 7px;
+  border-right: 1px solid #d9d9d9;
+}
+header .spot li:last-child {
+  border-right: none;
+}
+
+header .spot span {
+  margin-left: 5px;
+}
+.header-center {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  gap: 70px;
+  position: absolute;
+  top: 40px;
+  padding: 10px;
+  align-items: center;
+}
+
+header input {
+  width: 400px;
+  height: 50px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.search {
+  position: relative;
+  width: 400px; /* input의 너비와 동일하게 설정 */
+}
+
+.search input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0px 20px;
+  padding-right: 50px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.header-icon {
+  display: flex;
+  gap: 30px;
+  font-size: 40px;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+.header-footer {
+  position: absolute;
+  top: 130px;
+  padding: 20px 10px;
+  position: relative;
+}
+.header-list {
+  position: relative;
+}
+.header-list a {
+  display: block;
+  width: 160px;
+}
+.header-list a:hover {
+  color: tomato;
+}
+.header-list span {
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.Ab {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.Ab a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  background: #f0eded;
+  text-align: center;
+  padding: 5px;
+}
+.Ab a:hover,
+.Ab a:focus {
+  color: tomato;
+}
+nav {
+  position: absolute;
+  top: 12px;
+  left: 300px;
+  z-index: 10;
+  padding: 10px;
+}
+nav > ul {
+  display: flex;
+}
+nav > ul > li > a {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+nav > ul > li:hover > a,
+nav > ul > li.on > a,
+nav > ul > li > a:focus {
+  text-decoration: underline;
+  background: tomato;
+  color: #fff;
+}
+.notice {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.notice a {
+  display: block;
+  border: 1px solid #f0eded;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.notice span {
+  color: tomato;
+}
+.sub {
+  display: none;
+}
+.sub a {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  background: #f0eded;
+  text-align: center;
+}
+.sub a:hover,
+.sub a:focus {
+  color: tomato;
+  background: #fff;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.slide ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.slide ul li {
+  width: calc(100% / 3);
+  height: 100%;
+  position: relative;
+}
+.slide ul li a {
+  display: block;
+  height: 100%;
+}
+.slide ul li.s1 {
+  background: url(../img/s1.jpg) no-repeat center/cover;
+}
+.slide ul li.s2 {
+  background: url(../img/s2.jpg) no-repeat center/cover;
+}
+.slide ul li.s3 {
+  background: url(../img/s3.jpg) no-repeat center/cover;
+}
+.slide ul li a .text {
+  background: rgba(0, 0, 0, 0.6);
+  width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide ul li .text p {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.s1 .text span {
+  color: tomato;
+}
+.s2 .text span {
+  color: blue;
+}
+.s3 .text span {
+  color: greenyellow;
+}
+.banner {
+  width: 1340px;
+  margin: auto;
+  height: 150px;
+}
+.banner a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  padding-top: 60px;
+}
+.banner h2 {
+  padding: 10px;
+}
+.banner h2 {
+  font-size: 35px;
+}
+.banner h2 span {
+  padding: 10px;
+}
+.banner p {
+  color: #999999;
+  font-size: 20px;
+}
+.contents {
+  width: 1340px;
+  margin: auto;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+.contents .career {
+  display: flex;
+  justify-content: space-around;
+}
+.contents .career img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.contents .career button {
+  width: 250px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 20px;
+}
+.contents .career .text {
+  width: 250px;
+  padding-left: 5px;
+}
+.contents .career .text h3 {
+  padding: 10px 0;
+}
+.contents .career .text .DC {
+  color: tomato;
+  font-weight: bold;
+  font-size: 18px;
+}
+.contents .career .text .value {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 10px;
+}
+footer {
+  width: 1340px;
+  height: 200px;
+  margin: auto;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  position: relative;
+  font-size: 18px;
+}
+.fsite {
+  position: absolute;
+  right: 20px;
+  width: 150px;
+  font-size: 18px;
+}
