@@ -1,7 +1,7 @@
 $(function () {
   // 슬라이드
   function slide() {
-    $(".slide ul").animate({ left: "-100%" }, 3000, function () {
+    $(".slide ul").animate({ left: "-100%" }, 3050, function () {
       $(".slide ul").append($(".slide ul li").first());
       $(".slide ul").css({ left: "0" });
     });
